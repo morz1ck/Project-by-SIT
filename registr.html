@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>HLTV | Регистрация</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Регистрация в системе HLTV</h1>
+    
+    <form>
+        <h3>Введите данные для регистрации:</h3>
+        
+        <p>
+            <b>Почта:</b>
+            <input type="text" id="email" name="email" size="40" maxlength="50">
+        </p>
+        
+       <p><b>Логин:</b>
+        <input type="text" id="rlogin" name="rlogin" size="40" maxlength="50"></p>
+        
+        <p>
+            <b>Пароль:</b>
+            <input type="text" id="rpassword" name="rpassword" size="40" maxlength="50">
+            <input type="button" id="rshowpassword" name="rshowpassword" value="Показать" size="40" maxlength="50" onclick="showp('rpassword', 'rshowpassword')">
+        </p>
+
+        <p>
+            <b>Повторите пароль:</b>
+            <input type="text" id="ragainpassword" name="ragainpassword" size="40" maxlength="50">
+            <input type="button" id="showagainpassword2" name="showagainpassword" value="Показать" size="40" maxlength="50" onclick="showp('ragainpassword','showagainpassword2')">
+        </p>
+    
+
+        <p>
+            <input type="button" value="Авторизоваться" onclick="window.location.replace('exist.html')">
+            <input type="button" value="Регистрация" onclick="registrData()">
+            <input type="reset" value="Очистить" onclick="clearResult()">
+        </p>
+    </form>
+    
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>HLTV | Авторизация</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1>Авторизация в системе HLTV</h1>
+    
+    <form>
+        <h3>Введите данные для входа:</h3>
+        
+       <p><b>Логин:</b>
+        <input type="text" id="exlogin" name="exlogin" size="40" maxlength="50"></p>
+        
+        <p>
+            <b>Пароль:</b>
+            <input type="text" id="expassword" name="expassword" size="40" maxlength="50">
+            <input type="button" id="showexpassword" name="showexpassword" value="Показать" size="40" maxlength="50" onclick="showp('expassword', 'showexpassword')">
+        
+        </p>
+        
+        <p>
+            <input type="button" value="Зарегистрироваться" onclick="window.location.replace('registr.html')">
+            <input type="button" value="Авторизоваться" onclick="checkData()">
+            <input type="reset" value="Очистить" onclick="clearResult()">
+        </p>
+    </form>
+    <hr>
+    <h2>Для преподавателя:</h2>
+    <p>
+        <font size="5" color="black" face="Times New Roman">
+            <h3>Список логинов и паролей</h3>
+            <ul>
+                <li>Логин:<b>morz1ck</b>; Пароль:<b>12345</b></li>
+                <li>Логин:<b>пацан</b>; Пароль:<b>228</b></li>
+                <li>Логин:<b>чувачок</b>; Пароль:<b>beremennav16</b></li>
+                <li>Логин:<b>skyrim</b>; Пароль:<b>password</b></li>
+                <li>Логин:<b>4u4uk</b>; Пароль:<b>bichik</b></li>
+            </ul>
+        </font>
+    </p>
+    
+</body>
+</html>
